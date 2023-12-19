@@ -1,0 +1,389 @@
+/* ESTILOS DE LA RUTA PRINCIPAL*/
+
+.initialPage{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.initialPage__footerimg{
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+}
+.imgfooter{
+  height: 100%;
+}
+
+
+.mainContent{
+  display: grid;
+  gap: 25px;
+  max-width: 560px;
+  padding: 8px;
+}
+
+.mainText{
+  text-align: center;
+}
+
+.titleText{
+  color:#E2000C ;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form{
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 45px;
+}
+.btnStart{
+  background-color: #E2000C;
+  color: white;
+  border: none;
+}
+
+/* ESTILOS DEL CONTENEDOR DE LAS CARTAS DE POKEMON*/
+.conteinerHeader{
+  background-image: url('/headerPokemon.jpg');
+  height: 120px;
+  position: relative;
+}
+.textHeader{
+ position: absolute;
+ width: 80%;
+ top: 10px;
+}
+.imgHeader{
+  position: absolute;
+  right: 10px;
+  width: 50px;
+  bottom: 20px;
+}
+
+.pTrainer{
+  margin: 10px 0 ;
+  padding: 5px;
+}
+
+.nameTrainer{
+  color: #E2000C;
+
+}
+
+.ConteinerForm{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.ConteinerForm__search{
+   width: 100%;
+   background-color:antiquewhite ;
+  
+}
+.ConteinerForm__textsearch{
+  width: 70%;
+  height: 50px;
+}
+.ConteinerForm__btn{
+  width: 30%;
+  height: 50px;
+  background-color: #E2000C;
+  color: azure;
+}
+
+.ConteinerForm__btn:hover{
+ 
+  background-color: #FF576A;
+  color: black
+}
+
+
+
+.ConteinerForm__types{
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  background-color: #E2000C;
+  color: white;
+  border-radius: 8px;
+}
+
+
+.ConteinerCardPokemons{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  justify-content: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 8px;
+
+}
+
+/* ESTILOS DE CADA CARTA DE POKEMON */
+
+.CardPokemon{
+  border-radius: 10px;
+  
+  text-align: center;
+  display: grid;
+  gap: 5px;
+}
+
+.CardPokemon__img{
+ 
+position: relative;
+height: 140px;
+
+}
+.imgPokemon{
+  position: absolute;
+  bottom: 0;
+  transform: translateY(35%);
+  padding: 40px;
+}
+
+.CardPokemon__name{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding-top: 40px;
+  text-decoration: none;
+}
+
+.CardPokemon__types{
+  text-transform: capitalize;
+}
+
+.types{
+  font-size: small;
+  color: darkgray;
+  
+}
+
+.conteinerStats{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 10px;
+}
+
+.name__stat{
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.number__stat{
+  font-weight: bold;
+}
+
+
+
+
+
+/* ESTILOS DEL PERFIL DE CARTA DE CADA POKEMON*/
+.bodyCard{
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.conteinerProgress{
+  display:grid ;
+  gap: 11px;
+}
+.progressText{
+  display: flex;
+  justify-content: space-between;
+}
+.totalProgress{
+   height: 30px;
+   background-color: grey;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.perfilcard__id{
+  border: 2px solid grey;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  width:max-content ;
+}
+.perfilcard__name{
+  color: grey;
+  font-size: 1.7rem;
+  text-transform: capitalize  ;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.perfilcard__properties{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+ 
+}
+.perfilcard__properties div{
+  
+  letter-spacing: 1.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  
+}
+
+.textStats{
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.typeAndAbilities{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.sectionStats{
+  display: flex;
+  gap: 20px;
+}
+.section{
+  text-align: center;
+  display: grid;
+  gap: 10px;
+}
+.sectionStatsText{
+  background-color:aliceblue ;
+  padding: 10px 20px;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+
+.headerPerfilPokemon{
+
+margin-top: 100px;
+position: relative;
+height: 160px;
+display: flex;
+justify-content: center;
+}
+ 
+.imgPerfilpokemon{
+  position: absolute;
+  bottom: 0;
+  transform: translateY(10%);
+  padding: 40px;
+  max-width: 350px;
+}
+
+.btnReturn{
+  
+  width: 50px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  border-radius: 50%;
+  padding: 10px;
+  transition: all .5s;
+  z-index: 100;
+}
+
+.btnReturn:hover {
+  background-color: gray;
+}
+
+/* ESTILOS DE LOS BOOTONES DE LA PAGINACION*/
+
+.conteinerPagination{
+  padding-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.PaginationBtn{
+  background-color: #FFF0D7;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.PaginationBtn:hover{
+  background-color: #E2000C;
+  color: white;
+  font-weight: bold ;
+}
+
+
+
+
+
+@media (min-width:600px){
+  .initialPage__footerimg{
+    position: absolute;
+    bottom: 0;
+    height:initial;
+  }
+  .imgfooter{
+    height: initial;
+  }
+
+  .mainContent{
+    margin-bottom: 100px;
+   
+  }
+
+
+  .textHeader{
+    position: absolute;
+    width: 510px;
+    top: 10px;
+   }
+   .imgHeader{
+     position: absolute;
+     right: 10px;
+     width: 100px;
+     bottom: -30px;
+   }
+
+
+
+   .ConteinerForm{
+    flex-wrap: nowrap;
+    margin: 20px 0;
+  }
+  
+  .ConteinerForm__btn{
+    height: 50px;
+  }
+  
+  .ConteinerForm__types{
+    height: 50px;
+  }
+
+
+  .typeAndAbilities{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  
+  
+}
